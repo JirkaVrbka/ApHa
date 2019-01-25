@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="950.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.creating.CreatePomController">
+   <children>
+      <TextField layoutX="70.0" layoutY="114.0" />
+      <Label layoutX="70.0" layoutY="84.0" text="Name" />
+      <Button fx:id="saveButton" layoutX="27.0" layoutY="886.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="816.0" text="Save" />
+   </children>
+</AnchorPane>
