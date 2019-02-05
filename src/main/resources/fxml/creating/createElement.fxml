@@ -71,12 +71,12 @@
                   <TextField fx:id="selectorPathTextArea" layoutX="110.0" prefHeight="102.0" prefWidth="230.0" />
                   <ToggleButton fx:id="selectorIdToggleBtn" mnemonicParsing="false" prefWidth="110.0" text="ID">
                      <toggleGroup>
-                        <ToggleGroup fx:id="selector" />
+                        <ToggleGroup fx:id="selectorType" />
                      </toggleGroup>
                   </ToggleButton>
-                  <ToggleButton fx:id="selectorPartialIdToggleBtn" layoutY="25.0" mnemonicParsing="false" prefWidth="110.0" selected="true" text="Partial ID" toggleGroup="$selector" />
-                  <ToggleButton fx:id="selectorXpathToggleBtn" layoutY="50.0" mnemonicParsing="false" prefWidth="110.0" text="Xpath" toggleGroup="$selector" />
-                  <ToggleButton fx:id="selectorTextToggleBtn" layoutY="75.0" mnemonicParsing="false" prefWidth="110.0" text="Text" toggleGroup="$selector" />
+                  <ToggleButton fx:id="selectorPartialIdToggleBtn" layoutY="25.0" mnemonicParsing="false" prefWidth="110.0" selected="true" text="Partial ID" toggleGroup="$selectorType" />
+                  <ToggleButton fx:id="selectorXpathToggleBtn" layoutY="50.0" mnemonicParsing="false" prefWidth="110.0" text="Xpath" toggleGroup="$selectorType" />
+                  <ToggleButton fx:id="selectorTextToggleBtn" layoutY="75.0" mnemonicParsing="false" prefWidth="110.0" text="Text" toggleGroup="$selectorType" />
                </children>
             </Pane>
             <Pane fx:id="driverPane" layoutX="5.0" layoutY="160.0" prefHeight="50.0" prefWidth="340.0">
