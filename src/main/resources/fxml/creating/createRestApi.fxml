@@ -8,7 +8,10 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="900.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.creating.CreateRestApi">
+<AnchorPane prefHeight="900.0" prefWidth="1100.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.creating.CreateRestApi">
    <children>
       <ToggleButton layoutX="44.0" layoutY="127.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="200.0" text="GET">
          <toggleGroup>

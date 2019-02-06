@@ -6,7 +6,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="950.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.creating.CreatePomController">
+<AnchorPane prefHeight="950.0" prefWidth="870.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.creating.CreatePomController">
    <children>
       <TextField layoutX="70.0" layoutY="114.0" />
       <Label layoutX="70.0" layoutY="84.0" text="Name" />

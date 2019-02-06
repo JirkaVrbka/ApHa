@@ -14,7 +14,10 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="950.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.creating.CreateElementController">
+<AnchorPane prefHeight="950.0" prefWidth="870.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.creating.CreateElementController">
    <children>
       <Pane fx:id="positionPane" layoutX="20.0" layoutY="420.0" prefHeight="394.0" prefWidth="340.0">
          <children>
