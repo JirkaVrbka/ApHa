@@ -1,6 +1,7 @@
 package Model;
 
 import Constants.PositionType;
+import Handlers.Json.JsonHandler;
 import com.google.gson.Gson;
 
 public class Element {
@@ -201,15 +202,13 @@ public class Element {
         this.imagePath = imagePath;
     }
 
-    public static String convertToJson(Element webElement)
+    public String convertToJson()
     {
-        Gson gson = new Gson();
-        return gson.toJson(webElement);
+        return JsonHandler.convertToJson(this);
     }
 
     public static Element convertFromJson(String webElementJson)
     {
-        Gson gson = new Gson();
-        return gson.fromJson(webElementJson, Element.class);
+        return JsonHandler.convertFromJson(webElementJson, Element.class);
     }
 }
