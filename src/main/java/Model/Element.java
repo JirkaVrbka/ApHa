@@ -1,6 +1,7 @@
 package Model;
 
 import Constants.PositionType;
+import com.google.gson.Gson;
 
 public class Element {
 
@@ -128,6 +129,22 @@ public class Element {
 
     private Position position;
 
+    public Element(){
+        name = "name";
+        selectorType = SelectorType.ID;
+        selectorValue = "id";
+        requiredDriver = DriverType.APPIUM;
+
+        abilities = new ElementAbilities();
+        abilities.clickable = true;
+        abilities.hasText = true;
+        abilities.redirects = false;
+
+        imagePath = "/path/to/image";
+        position = new Position();
+        position.heightPT = PositionType.PX;
+    }
+
     public ElementAbilities getAbilities() {
         return abilities;
     }
@@ -182,5 +199,17 @@ public class Element {
 
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
+    }
+
+    public static String convertToJson(Element webElement)
+    {
+        Gson gson = new Gson();
+        return gson.toJson(webElement);
+    }
+
+    public static Element convertFromJson(String webElementJson)
+    {
+        Gson gson = new Gson();
+        return gson.fromJson(webElementJson, Element.class);
     }
 }
